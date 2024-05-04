@@ -1,0 +1,19 @@
+apiVersion: v1alpha1
+kind: Setting
+metadata:
+  name: plugin-toolbox-settings
+spec:
+  forms:
+    - group: steam
+      label: STEAM配置
+      formSchema:
+        - $formkit: text
+          name: token
+          label: Steam Web API Token
+          placeholder: 请输入TOKEN
+          help: 在https://steamcommunity.com/dev/apikey 申请
+        - $formkit: text
+          name: steamId
+          label: Steam ID
+          placeholder: 请输入Steam ID
+          help: 自己账户的 Steam Id 可以在 Steam 的网页端中获取到
